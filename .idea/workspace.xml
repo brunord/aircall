@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52f70a1f-f467-4aea-b0b2-d1a2b09a6579" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/github_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/github_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/spark_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/spark_processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etl.py" beforeDir="false" afterPath="$PROJECT_DIR$/etl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/data/.part-00000-68d41ae2-8089-46d9-8197-82d7e24b00df-c000.json.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/data/part-00000-68d41ae2-8089-46d9-8197-82d7e24b00df-c000.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawler/github_client.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -30,6 +25,18 @@
               <folding>
                 <element signature="e#1#16#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -127,6 +134,7 @@
         <option value="$PROJECT_DIR$/etl.py" />
         <option value="$PROJECT_DIR$/crawler/github_client.py" />
         <option value="$PROJECT_DIR$/crawler/spark_processor.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -511,6 +519,16 @@
           <folding>
             <element signature="e#1#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

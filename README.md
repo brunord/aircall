@@ -29,3 +29,5 @@ improvements:
 the execution can be done incrementaly fetching only recent missing data on each run. The ideal design is to think
 the solution with a first step being a scheduled job retrieving API data in a monthly basis, and then triggering 
 the transformation (spark) job to generate a new dataset. 
+- Remove hardcoded values (access_token, number of retries, urls) and make everything passed as application arguments
+- Improve unit tests. 
