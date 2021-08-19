@@ -7,15 +7,22 @@ from pyspark.sql import DataFrame
 from pyspark.sql import SQLContext
 from crawler.github_client import get_repos
 from crawler.github_client import get_commits
+from crawler.github_client import get_api_rate_limit
 
 
 def get_commits_all_repos_df(spark):
+
     repos = get_repos().text
     public_repositories = set(i['name'] for i in json.loads(repos))
-    commits_df = list(parse_dataframe(json.loads(get_commits(repo).text), spark)
+
+    if int(get_api_rate_limit()) >= len(public_repositories):
+
+        commits_df = list(parse_dataframe(json.loads(get_commits(repo).text), spark)
                       .withColumn("repo_name", lit(repo))
                       .select(to_timestamp("commit.author.date", "yyyy-MM-dd'T'HH:mm:ss'Z'").alias("date"), "commit.author.email", "repo_name")
-                      for repo in public_repositories)
+                          for repo in public_repositories)
+    else:
+        raise Exception("Github remaining rate limit is not enough to process. Please try again later.")
 
     return union_all(*commits_df)
 

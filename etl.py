@@ -6,11 +6,16 @@ from api.api import start_api
 
 if __name__ == "__main__":
 
-    spark = SparkSession.builder.appName("Github Facebook Contributors ETL").getOrCreate()
+    try:
+        spark = SparkSession.builder.appName("Github Facebook Contributors ETL").getOrCreate()
 
-    #EXTRACT/TRANSFORM
-    dataset = get_commits_all_repos_df(spark).transform(new_montlhy_contributors)
-    #LOAD
-    dataset.coalesce(1).write.mode("Overwrite").json(data_dir)
+        #EXTRACT/TRANSFORM
+        dataset = get_commits_all_repos_df(spark).transform(new_montlhy_contributors)
+        #LOAD
+        dataset.coalesce(1).write.mode("Overwrite").json(data_dir)
 
-    start_api()
+        start_api()
+
+    except Exception as e:
+        raise SystemExit(e)
+

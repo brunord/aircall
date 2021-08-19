@@ -5,7 +5,7 @@ from urllib3.util.retry import Retry
 
 BASE_URL = 'https://api.github.com'
 OWNER = 'facebook'
-ACCESS_TOKEN = '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'
+ACCESS_TOKEN = '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'
 
 retries = Retry(total=3, backoff_factor=1, status_forcelist=[404, 429, 500, 502, 503, 504])
 adapter = HTTPAdapter(max_retries=retries)
@@ -17,7 +17,12 @@ def do_get(url):
     req = Request('GET',  url)
     prepped = req.prepare()
     prepped.headers['Authorization'] = f'token {ACCESS_TOKEN}'
-    return http.send(prepped)
+    response = http.send(prepped)
+
+    if response.status_code != 200:
+        raise Exception(f"Error handling request {url}: {response.reason}")
+
+    return response
 
 
 def get_api_rate_limit(): return do_get(f"{BASE_URL}/user").headers.get('X-RateLimit-Remaining')

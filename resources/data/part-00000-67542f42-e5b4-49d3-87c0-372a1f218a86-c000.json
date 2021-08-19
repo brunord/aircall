@@ -72,7 +72,7 @@
 {"repo_name":"pyre2","month":"2018-07","count":1}
 {"repo_name":"jest","month":"2021-06","count":5}
 {"repo_name":"buck","month":"2021-03","count":3}
-{"repo_name":"hhvm","month":"2021-08","count":18}
+{"repo_name":"hhvm","month":"2021-08","count":17}
 {"repo_name":"chisel","month":"2020-10","count":1}
 {"repo_name":"wdt","month":"2021-07","count":1}
 {"repo_name":"flux","month":"2020-12","count":4}
@@ -99,7 +99,7 @@
 {"repo_name":"treadmill","month":"2019-08","count":2}
 {"repo_name":"buck","month":"2020-11","count":1}
 {"repo_name":"fbthrift","month":"2021-08","count":19}
-{"repo_name":"watchman","month":"2021-08","count":4}
+{"repo_name":"watchman","month":"2021-08","count":6}
 {"repo_name":"chisel","month":"2018-04","count":1}
 {"repo_name":"fishhook","month":"2018-02","count":1}
 {"repo_name":"chisel","month":"2020-06","count":1}
@@ -114,7 +114,7 @@
 {"repo_name":"treadmill","month":"2021-03","count":1}
 {"repo_name":"wdt","month":"2019-10","count":1}
 {"repo_name":"nailgun","month":"2020-08","count":1}
-{"repo_name":"facebook-ios-sdk","month":"2021-08","count":9}
+{"repo_name":"facebook-ios-sdk","month":"2021-08","count":8}
 {"repo_name":"wdt","month":"2021-04","count":1}
 {"repo_name":"buck","month":"2020-10","count":2}
 {"repo_name":"nailgun","month":"2020-11","count":1}
@@ -131,7 +131,7 @@
 {"repo_name":"yoga","month":"2021-02","count":3}
 {"repo_name":"tac_plus","month":"2017-01","count":1}
 {"repo_name":"tac_plus","month":"2016-09","count":1}
-{"repo_name":"folly","month":"2021-08","count":17}
+{"repo_name":"folly","month":"2021-08","count":18}
 {"repo_name":"rocksdb","month":"2021-08","count":16}
 {"repo_name":"yoga","month":"2021-06","count":2}
 {"repo_name":"buck","month":"2021-05","count":1}
