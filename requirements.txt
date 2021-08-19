@@ -1,0 +1,5 @@
+pyspark==3.0.1
+requests==2.26.0
+urllib3
+flask
+flask-restful
